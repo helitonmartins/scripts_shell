@@ -121,6 +121,7 @@ export DEBIAN_FRONTEND=noninteractive
 ### updating the system locales
 ${SED} -i 's/# pt_BR ISO-8859-1/pt_BR ISO-8859-1/g' /etc/locale.gen
 ${SED} -i 's/# pt_BR.UTF-8 UTF-8/pt_BR.UTF-8 UTF-8/g' /etc/locale.gen
+${SED} -i 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/g' /etc/locale.gen
 ${LOCALE_GEN}
 
 # Updating the repositories
@@ -170,6 +171,9 @@ ${CAT} << EOF > /root/.bashrc
 
 export EDITOR=vim
 export HISTTIMEFORMAT="%h/%d - %H:%M:%S "
+#export LANGUAGE=en_US.UTF-8
+#export LANG=en_US.UTF-8
+#export LC_ALL=en_US.UTF-8
 TZ='America/Sao_Paulo'; export TZ
 
 
