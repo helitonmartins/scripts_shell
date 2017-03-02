@@ -2,7 +2,7 @@
 #-------------------------------------------------------------------------
 # ConfInicialWheezy
 #
-# Site  : http://www.douglas.wiki.br
+# Site  : http://www.douglasqsantos.com.br
 # Author : Douglas Q. dos Santos <douglas.q.santos@gmail.com>
 # Management: Douglas Q. dos Santos <douglas.q.santos@gmail.com>
 #
@@ -263,10 +263,10 @@ ${CP} -Rfa firmware/* /lib/firmware/
 
 #Set the default shell with fish shell
 #if [ $(uname -m) == "x86_64" ]; then
-#${WGET} -c http://www.douglas.wiki.br/Downloads/misc/fish_2.1.0-1_amd64.deb -O /tmp/fish_2.1.0-1_amd64.deb
+#${WGET} -c http://wiki.douglasqsantos.com.br/Downloads/bacula/fish_2.1.0-1_amd64.deb -O /tmp/fish_2.1.0-1_amd64.deb
 #${DPKG} -i /tmp/fish_2.1.0-1_amd64.deb
 #else
-#${WGET} -c http://www.douglas.wiki.br/Downloads/misc/fish_2.1.0-1_i386.deb -O /tmp/fish_2.1.0-1_i386.deb
+#${WGET} -c http://wiki.douglasqsantos.com.br/Downloads/bacula/fish_2.1.0-1_i386.deb -O /tmp/fish_2.1.0-1_i386.deb
 #${DPKG} -i /tmp/fish_2.1.0-1_i386.deb
 #fi
 
