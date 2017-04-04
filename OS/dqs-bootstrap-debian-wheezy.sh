@@ -1,20 +1,20 @@
 #!/bin/bash
 #-------------------------------------------------------------------------
-# ConfInicialjessie
+# ConfInicialwheezy
 #
 # Site  : http://wiki.douglasqsantos.com.br
 # Author : Douglas Q. dos Santos <douglas.q.santos@gmail.com>
 # Management: Douglas Q. dos Santos <douglas.q.santos@gmail.com>
 #
 #-------------------------------------------------------------------------
-# Note: This Shell Script set up the initial configuration to Debian jessie
+# Note: This Shell Script set up the initial configuration to Debian wheezy
 # where install the needed packets and configure some packets
 #-------------------------------------------------------------------------
 # History:
 #
 # Version 1:
 # Data: 26/04/2015
-# Description: Set up the initial configuration of Debian GNU/Linux jessie
+# Description: Set up the initial configuration of Debian GNU/Linux wheezy
 # set up the repositories and install some packets
 #
 #--------------------------------------------------------------------------
@@ -122,29 +122,29 @@ ${CP} -Rf ${APT}/sources.list ${APT}/sources.list.${BKP} 2> /dev/null
 ${CAT} << EOF > ${APT}/sources.list
 # Date of the file: $(date)
 # Official repository
-deb http://ftp.br.debian.org/debian jessie main contrib non-free
-deb-src http://ftp.br.debian.org/debian jessie main contrib non-free
+deb http://ftp.br.debian.org/debian wheezy main contrib non-free
+deb-src http://ftp.br.debian.org/debian wheezy main contrib non-free
 
 
 # Security update repository
-deb http://security.debian.org/ jessie/updates main contrib non-free
-deb-src http://security.debian.org/ jessie/updates main contrib non-free
+deb http://security.debian.org/ wheezy/updates main contrib non-free
+deb-src http://security.debian.org/ wheezy/updates main contrib non-free
 
 # Propose update repository
-deb http://ftp.br.debian.org/debian jessie-proposed-updates main contrib non-free
-deb-src http://ftp.br.debian.org/debian jessie-proposed-updates main contrib non-free
+deb http://ftp.br.debian.org/debian wheezy-proposed-updates main contrib non-free
+deb-src http://ftp.br.debian.org/debian wheezy-proposed-updates main contrib non-free
 
 # Backport repository
-#deb http://ftp.br.debian.org/debian jessie-backports main contrib non-free
-#deb-src http://ftp.br.debian.org/debian jessie-backports main contrib non-free
+#deb http://ftp.br.debian.org/debian wheezy-backports main contrib non-free
+#deb-src http://ftp.br.debian.org/debian wheezy-backports main contrib non-free
 
 # Multimedia repository
-#deb http://ftp.br.debian.org/debian-multimedia/ jessie main non-free
-#deb-src http://ftp.br.debian.org/debian-multimedia/ jessie main non-free
+#deb http://ftp.br.debian.org/debian-multimedia/ wheezy main non-free
+#deb-src http://ftp.br.debian.org/debian-multimedia/ wheezy main non-free
 
 # PHP5 BACKPORT
-#deb http://packages.dotdeb.org jessie all
-#deb-src http://packages.dotdeb.org jessie all
+#deb http://packages.dotdeb.org wheezy all
+#deb-src http://packages.dotdeb.org wheezy all
 
 EOF
 
