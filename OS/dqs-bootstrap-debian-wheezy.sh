@@ -357,7 +357,6 @@ ${CAT} << EOF > /etc/issue.net
 #  Disconnect IMMEDIATELY if you are not an authorized user!  #
 ###############################################################
 EOF
-
 fi
 
 #Set up the backlist modules
