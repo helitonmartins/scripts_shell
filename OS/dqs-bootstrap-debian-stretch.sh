@@ -76,7 +76,7 @@ sleep 3
 # Commands used on the Script
 CAT="/bin/cat"
 APTGET="/usr/bin/apt-get"
-APTITUDE="/usr/bin/aptitude"
+APT="/usr/bin/apt"
 CRONTAB="/usr/bin/crontab"
 CP="/bin/cp"
 RM="/bin/rm"
@@ -173,21 +173,21 @@ export DEBIAN_PRIORITY=critical
 export DEBIAN_FRONTEND=noninteractive
 
 # Updating the distro
-${APTGET} upgrade -y
+${APTGET} upgrade -yfuq
 
 # Updating the keys repositories (KEYRINGS)
-${APTGET} -y install debian-archive-keyring debian-keyring debian-ports-archive-keyring emdebian-archive-keyring
+${APTGET} -yfuq install debian-archive-keyring debian-keyring debian-ports-archive-keyring emdebian-archive-keyring
 
 # Installing the packets
-${APTITUDE} install ${INSTALL_PACKETS} -y
-${APTITUDE} install ${TOOLS} -y
+${APT} install ${INSTALL_PACKETS} -yfuq
+${APT} install ${TOOLS} -yfuq
 
 ### Back the DEBCONF to default
 unset DEBIAN_PRIORITY
 unset DEBIAN_FRONTEND
 
 # Updating the system
-${APTITUDE} -y dist-upgrade
+${APT} -yfuq dist-upgrade
 
 ### Defining the vim configuration
 echo '" .vimrc - Defaults configurations
