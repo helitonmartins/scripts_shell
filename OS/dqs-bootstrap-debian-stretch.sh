@@ -92,7 +92,7 @@ CD="cd"
 GIT="/usr/bin/git"
 CHSH="/usr/bin/chsh"
 DOS2UNIX="/usr/bin/dos2unix"
-APT="/etc/apt"
+APT_DIR="/etc/apt"
 DPKG="/usr/bin/dpkg"
 LOCALE_GEN="/usr/sbin/locale-gen"
 GPASSWD="/usr/bin/gpasswd"
@@ -116,10 +116,10 @@ fi
 #PLUS_TOOLS="mytop ptop dnstop vnstat"
 
 # Performing the sources.list backup
-${CP} -Rf ${APT}/sources.list ${APT}/sources.list.${BKP} 2> /dev/null
+${CP} -Rf ${APT_DIR}/sources.list ${APT_DIR}/sources.list.${BKP} 2> /dev/null
 
 # Remaking the sources.lists configuration
-${CAT} << EOF > ${APT}/sources.list
+${CAT} << EOF > ${APT_DIR}/sources.list
 # Date of the file: $(date)
 # Official repository
 deb http://ftp.br.debian.org/debian stretch main contrib non-free
