@@ -71,7 +71,7 @@ LOCALE_GEN="/usr/sbin/locale-gen"
 
 # The Follow packets going to be removed from the system
 #REMOVABLE_PACKETS="dhcp3-client dhcp3-common nfs-common"
-INSTALL_PACKETS="vim vim-scripts vim-doc zip unzip rar p7zip bzip2 less links telnet locate openssh-server sysv-rc-conf rsync build-essential linux-headers-$(uname -r) libncurses5-dev ntpdate postfix cmake sudo git makepasswd"
+INSTALL_PACKETS="vim vim-scripts vim-doc zip unzip rar p7zip bzip2 less links telnet locate libpam-systemd openssh-server sysv-rc-conf rsync build-essential linux-headers-$(uname -r) libncurses5-dev ntpdate postfix cmake sudo git makepasswd"
 TOOLS="atsar tcpstat ifstat dstat procinfo pciutils dmidecode htop nmap tcpdump usbutils strace ltrace hdparm sdparm iotop atop iotop iftop sntop powertop itop kerneltop dos2unix tofrodos chkconfig zsh xz-utils unrar libjs-jquery arp-scan"
 #PLUS_TOOLS="mytop ptop dnstop vnstat"
 
